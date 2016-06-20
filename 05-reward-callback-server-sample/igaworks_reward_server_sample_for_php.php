@@ -4,6 +4,7 @@
 // $quantity : 리워드 지급량
 // $campaign_key : 참여 완료한 캠페인 키
 // $signed_value : 리워드 요청 보안 체크 값
+
 $hash_key = 'IGAWorks에서_발급한_해시키';
 
 // signed_value 체크 성공
@@ -14,7 +15,7 @@ if( $signed_value == hash_hmac('md5', $usn . $reward_key . $quantity . $campaign
     // 이 때 매체사 서버에서는 IGAWorks 서버가 보낸 reward_key 가 이미 지급 처리된 리워드 요청에 대한 reward_key 일 경우 아래와 같이 처리.
 
     // reward_key 에 해당하는 리워드 지급이 이미 완료 되었는지 체크 
-    if( // 이미 리워드 지급이 완료된 reward_key 일 경우 ) {
+    if( %이미 리워드 지급이 완료된 reward_key 일 경우% ) {
         // 리워드 중복 지급에 해당하는 Json string return
         // {"Result":false,"ResultCode":3100,"ResultMsg":"duplicate transaction"}
     } else {
