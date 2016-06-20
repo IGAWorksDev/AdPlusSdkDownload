@@ -1,3 +1,7 @@
+### c sharp 샘플코드
+
+```csharp
+    
 // Parameter Details
 // usn : 리워드를 지급할 유저 ID
 // reward_key : 리워드 요청에 대한 transaction_id(각 리워드 요청당 unique)
@@ -43,3 +47,5 @@ private string GetHMACMD5Hash(string plainText, string secretKey) {
     }
     return hashedString.ToString();
 }
+
+```

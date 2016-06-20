@@ -1,3 +1,7 @@
+###PHP 샘플코드
+
+```php
+
 // Parameter Details
 // $usn : 리워드를 지급할 유저 ID
 // $reward_key : 리워드 요청에 대한 transaction_id(각 리워드 요청당 unique)
@@ -26,3 +30,4 @@ if( $signed_value == hash_hmac('md5', $usn . $reward_key . $quantity . $campaign
     //  보안 체크 실패에 해당하는 Json string return 
     // {"Result":false,"ResultCode":1100,"ResultMsg":"invalid hash key"}
 }
+```
